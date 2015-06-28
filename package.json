@@ -1,0 +1,51 @@
+{
+  "name": "unexpected-color",
+  "version": "1.0.0",
+  "description": "Color comparison plugin for the Unexpected assertion library",
+  "main": "lib/unexpectedColor.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "mocha && npm run lint",
+    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
+    "coverage": "NODE_ENV=development istanbul cover --report lcov --report text _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
+    "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpectedColor -s unexpectedColor > unexpectedColor.min.js",
+    "generate-site": "node ./generate-site.js",
+    "update-examples": "node ./generate-site.js --update-examples && npm run generate-site",
+    "deploy-site": "deploy-site site-build"
+  },
+  "files": [
+    "unexpectedColor.min.js",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unexpectedjs/unexpected-color.git"
+  },
+  "keywords": [
+    "unexpected",
+    "assertion",
+    "color",
+    "colorspace",
+    "equality"
+  ],
+  "author": "Andreas Lind <andreas@one.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/unexpectedjs/unexpected-color/issues"
+  },
+  "homepage": "https://github.com/unexpectedjs/unexpected-color",
+  "devDependencies": {
+    "browserify": "10.2.4",
+    "bundle-collapser": "1.2.0",
+    "coveralls": "2.11.2",
+    "istanbul": "0.3.17",
+    "jshint": "2.8.0",
+    "minimist": "1.1.1",
+    "mocha": "2.2.5",
+    "unexpected": "8.5.0",
+    "unexpected-documentation-site-generator": "2.4.0"
+  },
+  "dependencies": {
+    "onecolor": "2.5.0"
+  }
+}
