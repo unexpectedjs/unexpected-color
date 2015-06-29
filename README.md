@@ -9,4 +9,4 @@ library with support for comparing colors via [one.color](https://github.com/One
 [![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-color/badge.svg)](https://coveralls.io/r/unexpectedjs/unexpected-color)
 [![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-color.svg)](https://david-dm.org/unexpectedjs/unexpected-express)
 
-Read [the documentation](https://unexpected.js.org/unexpected-color/).
+Read [the documentation](http://unexpected.js.org/unexpected-color/).
