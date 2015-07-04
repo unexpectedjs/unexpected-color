@@ -23,7 +23,6 @@ expect('blue', 'to be colored', '#2233ff');
 ```output
 expected 'blue' to be colored '#2233ff'
 
-■■■■■■■■■■■■■■
 #0000ff#2233ff
 ```
 

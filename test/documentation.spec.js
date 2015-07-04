@@ -31,7 +31,6 @@ describe("documentation tests", function () {
             expect(e, "to have message",
                 "expected 'rgb(0, 100, 32)' to be colored 'yellow'\n" +
                 "\n" +
-                "■■■■■■■■■■■■■■\n" +
                 "#006420#ffff00"
             );
         }
@@ -53,7 +52,6 @@ describe("documentation tests", function () {
             expect(e, "to have message",
                 "expected 'blue' to be colored '#2233ff'\n" +
                 "\n" +
-                "■■■■■■■■■■■■■■\n" +
                 "#0000ff#2233ff"
             );
         }

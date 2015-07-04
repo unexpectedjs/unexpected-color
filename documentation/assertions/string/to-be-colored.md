@@ -14,7 +14,6 @@ expect('rgb(0, 100, 32)', 'to be colored', 'yellow');
 ```output
 expected 'rgb(0, 100, 32)' to be colored 'yellow'
 
-■■■■■■■■■■■■■■
 #006420#ffff00
 ```
 

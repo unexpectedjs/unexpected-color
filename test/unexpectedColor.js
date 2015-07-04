@@ -13,7 +13,6 @@ describe('unexpected-color', function () {
             }, 'to error',
                 'expected \'green\' to be colored \'blue\'\n' +
                 '\n' +
-                '■■■■■■■■■■■■■■\n' +
                 '#008000#0000ff'
             );
         });
