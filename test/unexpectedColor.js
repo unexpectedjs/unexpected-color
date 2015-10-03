@@ -1,5 +1,5 @@
 /*global describe, it*/
-var expect = require('unexpected').clone().installPlugin(require('../lib/unexpectedColor'));
+var expect = require('unexpected').clone().use(require('../lib/unexpectedColor'));
 
 describe('unexpected-color', function () {
     describe('when comparing color string representations to each other', function () {
