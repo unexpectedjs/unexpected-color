@@ -9,9 +9,9 @@
     "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
     "coverage": "NODE_ENV=development istanbul cover --report lcov --report text _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpectedColor -s unexpectedColor > unexpectedColor.min.js",
-    "generate-site": "node ./generate-site.js",
-    "update-examples": "node ./generate-site.js --update-examples && npm run generate-site",
-    "deploy-site": "deploy-site site-build"
+    "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js",
+    "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples && npm run generate-site",
+    "deploy-site": "deploy-site.sh"
   },
   "files": [
     "unexpectedColor.min.js",
@@ -43,7 +43,7 @@
     "minimist": "1.1.1",
     "mocha": "2.2.5",
     "unexpected": "10.0.0",
-    "unexpected-documentation-site-generator": "2.5.1"
+    "unexpected-documentation-site-generator": "3.1.0"
   },
   "peerDependencies": {
     "unexpected": "^10.0.0"
