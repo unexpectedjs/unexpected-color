@@ -5,7 +5,7 @@
   "main": "lib/unexpectedColor.js",
   "scripts": {
     "lint": "jshint .",
-    "test": "mocha && npm run lint",
+    "test": "mocha ./documentation/**/*.md ./test/**/*.js && npm run lint",
     "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
     "coverage": "NODE_ENV=development istanbul cover --report lcov --report text _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpectedColor -s unexpectedColor > unexpectedColor.min.js",
@@ -43,7 +43,8 @@
     "minimist": "1.1.1",
     "mocha": "2.2.5",
     "unexpected": "10.0.0",
-    "unexpected-documentation-site-generator": "3.1.0"
+    "unexpected-documentation-site-generator": "^4.0.0",
+    "unexpected-markdown": "^1.3.4"
   },
   "peerDependencies": {
     "unexpected": "^10.0.0"
