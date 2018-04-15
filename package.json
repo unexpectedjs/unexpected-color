@@ -35,15 +35,15 @@
   },
   "homepage": "https://github.com/unexpectedjs/unexpected-color",
   "devDependencies": {
-    "browserify": "16.2.0",
-    "bundle-collapser": "1.3.0",
-    "coveralls": "3.0.0",
-    "eslint": "4.19.1",
-    "eslint-config-onelint": "3.0.0",
-    "istanbul": "0.4.5",
-    "minimist": "1.2.0",
-    "mocha": "5.1.0",
-    "unexpected": "10.37.4",
+    "browserify": "^16.2.0",
+    "bundle-collapser": "^1.3.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-onelint": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "minimist": "^1.2.0",
+    "mocha": "^5.1.0",
+    "unexpected": "^10.37.4",
     "unexpected-documentation-site-generator": "^4.2.3",
     "unexpected-markdown": "^1.3.4"
   },
@@ -51,6 +51,6 @@
     "unexpected": "^10.0.0"
   },
   "dependencies": {
-    "onecolor": "3.0.5"
+    "onecolor": "^3.0.5"
   }
 }
