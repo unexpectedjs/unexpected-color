@@ -2,3 +2,4 @@
 --recursive
 --require ./bootstrap-unexpected-markdown
 --compilers md:unexpected-markdown
+--timeout 10000
