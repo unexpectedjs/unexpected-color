@@ -11,7 +11,7 @@ describe('unexpected-color', function () {
             expect(function () {
                 expect('green', 'to be colored', 'blue');
             }, 'to error',
-                'expected \'green\' to be colored \'blue\'\n' +
+            'expected \'green\' to be colored \'blue\'\n' +
                 '\n' +
                 '#008000#0000ff'
             );
