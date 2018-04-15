@@ -51,6 +51,6 @@
     "unexpected": "^10.0.0"
   },
   "dependencies": {
-    "onecolor": "2.5.0"
+    "onecolor": "3.0.5"
   }
 }
