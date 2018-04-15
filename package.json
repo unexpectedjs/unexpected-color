@@ -41,7 +41,7 @@
     "eslint": "4.19.1",
     "eslint-config-onelint": "3.0.0",
     "istanbul": "0.4.5",
-    "minimist": "1.1.1",
+    "minimist": "1.2.0",
     "mocha": "2.2.5",
     "unexpected": "10.0.0",
     "unexpected-documentation-site-generator": "^4.2.3",
