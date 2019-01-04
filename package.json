@@ -43,12 +43,12 @@
     "istanbul": "^0.4.5",
     "minimist": "^1.2.0",
     "mocha": "^5.1.0",
-    "unexpected": "^10.37.4",
+    "unexpected": "^11.0.0-4",
     "unexpected-documentation-site-generator": "^5.0.0",
     "unexpected-markdown": "^2.0.0"
   },
   "peerDependencies": {
-    "unexpected": "^10.0.0"
+    "unexpected": "^10.0.0 || ^11.0.0-4"
   },
   "dependencies": {
     "onecolor": "^3.0.5"
