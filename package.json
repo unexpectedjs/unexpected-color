@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "test": "mocha ./documentation/**/*.md ./test/**/*.js",
     "ci": "npm test && npm run lint && npm run coverage && npm run generate-site",
-    "coverage": "NODE_ENV=development istanbul cover --report lcov --report text _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpectedColor -s unexpectedColor > unexpectedColor.min.js",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js",
     "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples && npm run generate-site",
@@ -44,6 +44,7 @@
     "istanbul": "^0.4.5",
     "minimist": "^1.2.0",
     "mocha": "^5.1.0",
+    "nyc": "^13.1.0",
     "prettier": "~1.15.3",
     "unexpected": "^11.0.0-4",
     "unexpected-documentation-site-generator": "^5.0.0",
@@ -54,5 +55,10 @@
   },
   "dependencies": {
     "onecolor": "^3.0.5"
+  },
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
   }
 }

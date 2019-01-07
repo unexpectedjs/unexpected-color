@@ -1,3 +1,5 @@
 /node_modules/
 /site-build/
 /unexpectedColor.min.js
+/coverage/
+/.nyc_output/
