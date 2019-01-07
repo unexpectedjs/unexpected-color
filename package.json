@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha ./documentation/**/*.md ./test/**/*.js",
-    "travis": "npm test && npm run lint && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
+    "ci": "npm test && npm run lint && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
     "coverage": "NODE_ENV=development istanbul cover --report lcov --report text _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpectedColor -s unexpectedColor > unexpectedColor.min.js",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js",
