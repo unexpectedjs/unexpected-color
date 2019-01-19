@@ -48,7 +48,7 @@
     "prettier": "~1.15.3",
     "unexpected": "^11.0.0-4",
     "unexpected-documentation-site-generator": "^6.0.0",
-    "unexpected-markdown": "^2.0.0"
+    "unexpected-markdown": "^3.0.0"
   },
   "peerDependencies": {
     "unexpected": "^10.0.0 || ^11.0.0-4"
