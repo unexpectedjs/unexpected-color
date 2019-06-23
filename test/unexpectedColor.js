@@ -1,16 +1,16 @@
-var expect = require('unexpected')
+const expect = require('unexpected')
   .clone()
   .use(require('../lib/unexpectedColor'));
 
-describe('unexpected-color', function() {
-  describe('when comparing color string representations to each other', function() {
-    it('should succeed', function() {
+describe('unexpected-color', () => {
+  describe('when comparing color string representations to each other', () => {
+    it('should succeed', () => {
       expect('#f00', 'to be colored', 'red');
     });
 
-    it('should fail with a diff', function() {
+    it('should fail with a diff', () => {
       expect(
-        function() {
+        () => {
           expect('green', 'to be colored', 'blue');
         },
         'to error',
