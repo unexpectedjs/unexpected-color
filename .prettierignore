@@ -1,1 +1,8 @@
 package.json
+
+/node_modules/
+/coverage/
+/site-build/
+/test/documentation.spec.js
+/unexpectedColor.min.js
+/.nyc_output/
