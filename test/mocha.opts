@@ -1,5 +1,0 @@
---reporter spec
---recursive
---require ./bootstrap-unexpected-markdown
---require unexpected-markdown
---timeout 10000
